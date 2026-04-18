@@ -1,7 +1,7 @@
 {
-  "name": "printmail-app-backend",
+  "name": "stake-backend",
   "version": "2.0.0",
-  "description": "Nodejs background worker for printmail",
+  "description": "Nodejs background worker for stake",
   "main": "dist/index.js",
   "bin": "bin/createNodetsApp.cjs",
   "author": "Emmanuel Onoja Ahman <ahmanemmanuel@gmail.com>",
@@ -10,8 +10,8 @@
     "node": ">=14.20.1 <21"
   },
   "scripts": {
-    "start": "pm2 start ecosystem.config.json --only preciate-api && pm2 save",
-    "start:build": "tsc --build && pm2 start ecosystem.config.json --only preciate-api && pm2 save",
+    "start": "pm2 start ecosystem.config.json --only stake-backend && pm2 save",
+    "start:build": "tsc --build && pm2 start ecosystem.config.json --only stake-backend && pm2 save",
     "compile": "tsc --build",
     "compile:watch": "tsc -b -w --preserveWatchOutput",
     "serve:debug": "nodemon -q --watch dist --ext js,json --delay 200ms --signal SIGTERM --exec \"node --inspect -r ./tsconfig-paths-bootstrap.js dist/index.js\"",
