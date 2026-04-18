@@ -1,7 +1,7 @@
 {
   "apps": [
     {
-      "name": "print-mail-backend",
+      "name": "stake-backend",
       "script": "dist/index.js",
       "node_args": "--experimental-modules --es-module-specifier-resolution=node",
       "instances": 1,
