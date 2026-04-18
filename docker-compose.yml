@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  app:
+    container_name: consize-backend
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: base
+    restart: always
+    env_file: .env
+    expose:
+      - ${PORT}
+    ports:
+      - ${PORT}:${PORT}

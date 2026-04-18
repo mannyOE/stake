@@ -1,0 +1,27 @@
+# Dependencies
+node_modules
+
+# yarn error logs
+yarn-error.log
+
+# Environment varibales
+.env*
+!.env*.example
+
+nodemon.json
+
+src/gcp-creds.json
+src/gcp-details.json
+
+
+# Code coverage
+coverage
+
+# build folder
+dist
+files
+
+# docker volume
+data
+nodemon.json
+.cache
